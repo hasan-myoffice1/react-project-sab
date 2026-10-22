@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --color-primary-100: #10DCEA;
+  --color-primary-40: rgba(16, 220, 234, 0.4);
+  --font-primary:"Hammersmith One", sans-serif;
+  --font-secondary: 'Open Sans';
+}
+
+
+.container{
+   width: min(100% - 2rem, 1000px);
+   margin-inline: auto;
+}
