@@ -23,8 +23,8 @@ const Header = () => {
     }, []);
 
     return (
-        <header>
-            <div className="container flex flex-wrap items-center justify-between pt-5">
+        <header className="sticky top-0 animate-[header-fade-in_500ms_ease-out_both]">
+            <div className="content-area flex flex-wrap items-center justify-between pt-5">
                 <a href="#home" aria-label="Saimun Al Bashar, home" className="grid h-9 w-9 place-items-center rounded-full border-2 border-primary-100 bg-gray-50 shadow-[2px_3px_4px_rgba(0,0,0,0.2)]">
                     <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
                         <path d="M12 3 3 11h2.5v9h4.5v-6h4v6h4.5v-9H21z" />

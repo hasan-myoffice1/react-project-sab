@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
-
+@keyframes header-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @theme {
   --color-primary-100: #10DCEA;
@@ -9,8 +16,23 @@
   --font-secondary: 'Open Sans';
 }
 
+@layer base {
+  .section-p {
+    @apply py-20;
+  }
+  .content-area{
+    max-width: min(100% - 2rem, 1100px);
+    margin-inline: auto;
+  }
+  .title-1 {
+    @apply text-2xl text-gray-800 font-bold font-primary;
+  }
+  .para {
+    @apply text-xl leading-7 text-gray-700 font-secondary;
+  }
 
-.container{
-   width: min(100% - 2rem, 1000px);
-   margin-inline: auto;
+  .circle-animation {
+    @apply hover:scale-110 transition-transform duration-[0.4s];
+  }
+
 }
